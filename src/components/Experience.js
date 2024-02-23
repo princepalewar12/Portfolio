@@ -53,13 +53,13 @@ const Experience = () => {
       style: "shadow-purple-400",
     },
     {
-      id: 6,
+      id: 8,
       src: firebase,
       title: "Firebase",
       style: "shadow-yellow-600",
     },
     {
-      id: 6,
+      id: 9,
       src: git,
       title: "Git",
       style: "shadow-red-600",
@@ -76,7 +76,7 @@ const Experience = () => {
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
             Experience
           </p>
-          <p className="py-6 ">This are the Technology I have worded with</p>
+          <p className="py-6 ">These are the Technologies I have worded with.</p>
         </div>
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
           {projectImg.map(({ id, src, style, title }) => (

@@ -1,6 +1,7 @@
 import React from "react";
 import heroImage from "../assets/heroImage.png";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-scroll";
 const Home = () => {
   return (
     <div
@@ -17,12 +18,12 @@ const Home = () => {
             Technology and a keen interest in becoming a React developer
           </p>
           <div>
-            <button className="group text-xl text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
+          <Link to="portfolio" smooth duration={500} className="group text-xl text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
               Portfolio
               <span className="group-hover:rotate-90 duration-300">
-                <FaArrowRight size={20} className="ml-2"/>
+                <FaArrowRight size={20} className="ml-2k"/>
               </span>
-            </button>
+            </Link>
           </div>
         </div>
 
