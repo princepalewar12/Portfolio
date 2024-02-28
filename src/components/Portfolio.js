@@ -1,18 +1,23 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
+import Video_Studio from "../assets/portfolio/Video_Studio.jpg";
+import Netflix_GPT from "../assets/portfolio/Netflix_GPT.jpg";
 import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
 
 const Portfolio = () => {
   const portfolio = [
     {
-      id: 1,
-      src: arrayDestruct,
+      id: 2,
+      src: Netflix_GPT,
+      link: "https://github.com/princepalewar12/Food-App",
+      style: "cursor-pointer",
+      href: "https://netflix-gpt-87774.web.app",
     },
     {
-      id: 2,
-      src: navbar,
+      id: 1,
+      src: Video_Studio,
+      link: "https://github.com/princepalewar12/Learn-Tube",
     },
+
     {
       id: 3,
       src: reactSmooth,
@@ -32,27 +37,29 @@ const Portfolio = () => {
           <p className="py-6 ">Check out some of my work Right Here</p>
         </div>
 
-       
-          <div  className="grid sm:grid-cols-2 md:grid-cols-4 gap-8 px-12 sm:px-0">
-          {portfolio.map(({ id, src }) => (
-
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8 px-12 sm:px-0">
+          {portfolio.map(({ id, src, link, style, href }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
-              <img
-                src={src}
-                alt=""
-                className="rounded-md duration-200 hover:scale-105"
-              />
+              <a href={href} target="_blank" rel="noreferrer">
+                <img
+                  src={src}
+                  alt=""
+                  className={`rounded-md h-40 duration-200 hover:scale-105 ${style}`}
+                />
+              </a>
               <div className="flex items-center justify-center ">
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Demo
+                  <a href={link} target="_blank" rel="noreferrer">
+                    CODE
+                  </a>
                 </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                {/* <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                   Code
-                </button>
+                </button> */}
               </div>
             </div>
-        ))}
-          </div>
+          ))}
+        </div>
       </div>
     </div>
   );
