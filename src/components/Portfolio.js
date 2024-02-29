@@ -1,14 +1,14 @@
 import React from "react";
 import Video_Studio from "../assets/portfolio/Video_Studio.jpg";
 import Netflix_GPT from "../assets/portfolio/Netflix_GPT.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
+import Food_app from "../assets/portfolio/Food_app.jpg";
 
 const Portfolio = () => {
   const portfolio = [
     {
       id: 2,
       src: Netflix_GPT,
-      link: "https://github.com/princepalewar12/Food-App",
+      link: "https://github.com/princepalewar12/Netflix-GPT",
       style: "cursor-pointer",
       href: "https://netflix-gpt-87774.web.app",
     },
@@ -20,7 +20,8 @@ const Portfolio = () => {
 
     {
       id: 3,
-      src: reactSmooth,
+      src: Food_app,
+      link: "https://github.com/princepalewar12/Food-App"
     },
   ];
 
@@ -49,7 +50,7 @@ const Portfolio = () => {
               </a>
               <div className="flex items-center justify-center ">
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  <a href={link} target="_blank" rel="noreferrer">
+                  <a href={link} target="_blank" rel="noreferrer" className="border-2 p-3 rounded-lg">
                     CODE
                   </a>
                 </button>
